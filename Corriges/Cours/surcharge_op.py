@@ -8,11 +8,13 @@ class Point:
 
     def __add__(self, other):
         """Surcharge de l'opérateur +"""
-        return Point(self.x + other.x, self.y + other.y)
+        if isinstance(other, Point):
+            return Point(self.x + other.x, self.y + other.y)
 
     def __sub__(self, other):
         """Surcharge de l'opérateur -"""
-        return Point(self.x - other.x, self.y - other.y)
+        if isinstance(other, Point):
+            return Point(self.x - other.x, self.y - other.y)
 
     def __str__(self):
         """Surcharge de l'affichage"""
