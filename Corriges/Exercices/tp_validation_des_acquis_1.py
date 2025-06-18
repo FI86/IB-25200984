@@ -26,7 +26,6 @@ def main():
             if nb_notes > 0: break
 
     notes = []  # Liste vide pour stocker les notes.
-    note = ""
 
     # Boucle pour saisir chaque note.
     for i in range(nb_notes):
@@ -35,8 +34,7 @@ def main():
                 note = float(input(f"Entrez la note {i + 1} : "))
             except(ValueError):
                 print("La note doit etre un nombre.")
-
-            if isinstance(note, float):
+            else:
                 if 0 <= note <= 20:
                     # Ajoute la note si elle est valide.
                     notes.append(note)
