@@ -151,7 +151,7 @@ root1.bind("<Escape>", quitter_fen_mdp)
 entry.pack()
 entry.focus_set()
 # Déterminer si le mot de passe est correct.
-Button(root1, text="Ok", command=test_ok, width=15).pack(pady=5)
+Button(root1, text="Ok", command=lambda: test_ok(None), width=15).pack(pady=5)
 # Ferme la fenêtre de connexion.
 Button(root1, text="Quitter", command=root1.destroy, width=15).pack(pady=5)
 # Attend d'accepter la fenetre de connexion
