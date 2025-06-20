@@ -11,7 +11,7 @@ root.resizable(width=False, height=False)
 # justify fonctionne lorsqu'il y a plusieurs ligne dans le label, anchor pour une seule ligne.
 # Label centre le texte par defaut, ttk.Label aligne à gauche par defaut.
 Label(root, text='Hello, Tkinter!', background='blue', foreground="white", anchor=W).pack(fill=BOTH, expand=True)
-ttk.Label(root, text='Hello, Tkinter!', background='yellow', anchor=E, width=100, height=200).pack(fill=BOTH, expand=True)
+ttk.Label(root, text='Hello, Tkinter!', background='yellow', anchor=E).pack(fill=BOTH, expand=True)
 label = ttk.Label(root, text='Hello, Tkinter!',background='green', anchor=S)
 label.pack(fill=BOTH, expand=True)
 
